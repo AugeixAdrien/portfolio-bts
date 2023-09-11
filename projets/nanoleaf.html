@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Nanoleaf clone</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Panneaux de leds RGB</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">Mon objectif en réalisant ce projet était de réaliser
+                    une lampe pour mon bureau dont le style serait inspiré de Nanoleaf,
+                    une marque produisant des panneaux en forme d'hexagones RGB. J'ai donc décidé
+                    de fabriquer ma propre version. Ce projet est contrôlé par un Arduino Uno
+                    programmé en C++ via l'IDE officiel de arduino. J'ai utilisé un module HC-06
+                    pour offrir une connection bluetooth au projet. Ce projet m'aura permis de m'améliorer
+                    en électronique tout en me permettant de tester de nouveaux supports sur lesquels developper.
+                    Le boitier aura été imprimé en 3D avec mon imprimante 3D, ce qui me permettra de rajouter des
+                    panneaux si je le désire.
+                    <br><br>
+                    <img src="../assets/projets/nanoleaf.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">Mes panneaux de leds</p>
+                <h5 style="text-decoration: underline;" class="animated-element">Côté logiciel
+                </h5>
+                <br>
+                <p class="animated-element">
+                    Comme dit précédemment, ce projet est contrôlé par un Arduino Uno et un module bluetooth
+                    hc-06 que j'avais sous la main. Le tout a été programmé en C++. Le controleur vérifie si un message
+                    est reçu par le module bluetooth, si un message est reçu, il passe sur le mode qui correspond.
+                    J'ai choisi d'utiliser un arduino car j'en avais un qui était libre, mais je pense qu'utiliser un
+                    esp32 aurait pu être plus adapté pour un projet qui touche à l'IOT. En effet, celui-ci propose
+                    une connection wifi et bluetooth nativement,
+                    est plus petit et propose plus de mémoire. Pour envoyer les messages bluetooth au controleur, j'ai 
+                    fait une application de test avec le MIT app inventor, qui permet de faire une application rapidement
+                    en connectant des blocs ensemble. C'est loin d'être optimal, mais correspond à mes attentes. Je pense
+                    essayer de refaire une version de cette application un peu plus tard, étant donné que j'ai pour objectif
+                    d'essayer d'apprendre le développement Android, notamment avec Kotlin ou Java.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Ce projet est en réalité surtout axé sur l'electronique, étant donné de la
+                    simplicité du programme utilisé. Cependant ce fût assez intéréssant pour moi à réaliser.
+                    Ce projet possède encore quelques axes d'améliorations, comme passer sur un esp32, faire des PCB
+                    personnalisés pour organiser le tout et refaire une application à la main.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

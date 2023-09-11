@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Super Paper Mario</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Mécanique de Super Paper Mario</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">De nouveau dans le cadre d'un projet libre pour le cours de NSI, j'ai eu
+                    l'occasion d'utiliser de nouveau ursina engine (déjà utilisé sur le projet de jeu de course). Cette
+                    fois-ci, la consigne étant d'utiliser la programmation orientée objet de python. J'ai donc décidé de
+                    faire un jeu de plateforme basé sur le principe de Super Paper Mario.
+                    <br><br>
+                    <img src="../assets/projets/paperMario2D.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">La vue 2D dans le jeu</p>
+                <h5 style="text-decoration: underline;" class="animated-element">1. La mécanique principale
+                </h5>
+                <br>
+                <p class="animated-element">La principale spécificité de Super Paper Mario que j'ai décidé d'exploiter
+                    pour mon projet est l'alternance entre la 2D et la 3D. En effet, dans ce jeu, le joueur peut changer
+                    de plan pour résoudre diverses énigmes. Pour cela, j'ai utilisé un système de caméra qui suit le
+                    joueur.
+                    <br><br>
+                    Pour gérer les collisions, j'ai utilisé des raycasts, qui sont des rayons qui partent du joueur et
+                    qui vérifient s'il y a une collision avec un objet. Si c'est le cas, le joueur ne peut pas se
+                    déplacer dans cette direction. Il existe également des raycast qui vérifient si le joueur est au sol
+                    ou non, pour donner l'impression qu'il tombe. Il y a donc différents raycasts pour chaque plan, 2D
+                    ou 3D. En 2D, le raycast est un rayon qui va vérifier la totalité des éléments devant le joueur
+                    (en réalité, le mode 2D n'est qu'un rendu du mode 3D, mais avec la caméra en mode de
+                    projection orthogonale). En 3D, le raycast est un rayon qui va vérifier la collision avec les objets
+                    du plan 3D. Le niveau utilise les textures de Super Paper Mario, et les modèles 3D ont été faits sur
+                    blender.
+                    <img src="../assets/projets/paperMario3D.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">La vue 3D dans le jeu, qui permet de contourner des objets
+                    impossibles à passer en 2D et inversement</p>
+                </p>
+                <br>
+                <h5 style="text-decoration: underline;" class="animated-element">2. Animations</h5>
+                <br>
+                <p class="animated-element">
+                    Voici quelques exemples de ce que j'ai pu réaliser dans ce projet :
+                    <br><br>
+                    Le joueur est composé de 2 plans dos à dos pour donner l'impression qu'il est est
+                    composé de papier. Pour les animations, j'ai utilisé un système de sprites, qui sont des images qui
+                    sont affichées à une certaine fréquence pour donner l'impression d'une animation, notamment pour
+                    l'animation de marche.
+                    <br><br>
+                    Pour faire des particules de fumée quand le personnage se déplace, j'ai utilisé créé des objets qui
+                    sont des carrés gris qui se réduisent au fur et a mesure du temps. Ils sont ensuite détruits après
+                    un certain temps.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Réfléchir à la mécanique de ce jeu était une idée que j'avais depuis
+                    quelques
+                    temps, et j'ai donc décidé de la réaliser pour ce projet. La conversion de la 3D en 2D m'a
+                    demandé un peu de réflexion, mais j'ai finalement réussi à trouver une solution qui me satisfaisait.
+                    Le jeu est assez bien réalisé par rapport à mes attentes, malgé quelques bugs que je n'ai pas eu le
+                    temps de résoudre, du au manque de temps pour rendre ce projet, celui-ci était un peu trop poussé
+                    pour ce qui était demandé, mais fut néanmoins un bon exercice pour moi.
+                    <br><br>
+                    Le code est disponible sur <a style="color:black;" href="https://github.com/tokageki/paper-Morio">mon github</a>.
+                    <br>
+                    Une video du projet est disponible sur <a style="color: black;" href="about:blank">youtube</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="icon" href="./toka/assets/pdp.webp">
+  <link rel="stylesheet" href="./toka/style.css">
+  <title>Tokageki</title>
+</head>
+<body class="wy-body-for-nav bg-dark">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+    <a href="tokageki" class="homeLink d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none"><img src="./toka/assets/pdp.webp" class="websiteLogo" alt="website logo">
+    <h1>Tokageki</h1></a>
+    <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+      <li class="menu nav-item" role="presentation"><button class="boutonMenu nav-link active text-light" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button></li>
+      <li class="menu nav-item" role="presentation"><button class="boutonMenu nav-link text-light" id="comm-tab" data-bs-toggle="tab" data-bs-target="#comm" type="button" role="tab" aria-controls="comm" aria-selected="false">Commission</button></li>
+      <li class="menu nav-item" role="presentation"><button class="boutonMenu nav-link text-light" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio" type="button" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</button></li>
+    </ul>
+  </header>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active text-light" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="piafs col-10 col-sm-8 col-lg-6"><img src="./toka/assets/chambre.webp" class="chambre d-block mx-lg-auto img-fluid" alt="Bird illustration" width="700" height="500" loading="lazy"></div>
+          <div class="col-lg-6">
+            <div class="text">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Student, junior developer & furry artist</h1><br>
+              <p class="lead">Hello, I'm Tokageki, a french guy of 18y.o. I learn programming, drawing and a bit of 3d modeling.<br>
+              Currently in high school with a math and computer specialty,<br>
+              programming has become one of my hobbies like drawing or video games.<br>
+              You can find my drawings on my instagram or my portfolio, and my programs on my github.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="http://github.com/tokageki" class="btn btn-outline-secondary btn-lg px-4"><i class="bi bi-github" style="color:white;font-size: 1.5rem"></i></a> <a href="https://instagram.com/tokageki_" class="btn btn-outline-secondary btn-lg px-4"><i class="bi bi-instagram" style="color:white;font-size: 1.5rem"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade text-light" id="comm" role="tabpanel" aria-labelledby="comm-tab">
+      <div class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="piafs col-10 col-sm-8 col-lg-6"><img src="./toka/assets/lugiaSquare.webp" class="lugia d-block mx-lg-auto img-fluid" alt="Lugia illustration" width="700" height="500" loading="lazy"></div>
+          <div class="col-lg-6">
+            <div class="text">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Commissions</h1><br>
+              <p class="lead">Thank you for showing interest in this part of the site, however I do not (yet) make commissions.<br>
+              Stay tuned on my networks, I will open some free commissions one day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade text-light" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+      <div class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="text">
+            <h1 class="display-5 fw-bold ps-4">Portfolio</h1>
+          </div>
+          <div class="album">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/mind.webp" class="cardImage" alt="MinDsiL">
+                    <div class="card-body">
+                      <p class="card-text">Made this one for <a href="https://twitter.com/mindsil_mp4" style="color:#75a8f4">MinDsiL</a> ! I really liked doing this one haha !</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/dragSolo.webp" class="cardImage" alt="drag">
+                    <div class="card-body">
+                      <p class="card-text">Made this one for my friend <a href="https://drage.carrd.co/" style="color:#75a8f4">Dragecko</a> !</p><br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/rito.webp" class="cardImage" alt="rito">
+                    <div class="card-body">
+                      <p class="card-text">Tried to make a rito OC !</p><br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/slimeCool.jpg" class="cardImage" alt="SlimeOne">
+                    <div class="card-body">
+                      <p class="card-text">I made these little guys on blender, I have quite a few in stock!</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/slimeOne.jpg" class="cardImage" alt="slimeTwo">
+                    <div class="card-body">
+                      <p class="card-text">I had fun with the transparency!</p><br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/slimeSilver.jpg" class="cardImage" alt="SlimeThree">
+                    <div class="card-body">
+                      <p class="card-text">And the metallic effects!</p><br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/Illustration.jpg" class="cardImage" alt="bird illustration">
+                    <div class="card-body">
+                      <p class="card-text">I like to draw birds, and the night with a starry sky reminds me of a peaceful moment. Perfect for drawing in the evening !</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/chambre.webp" class="cardImage" alt="3d representation of my room">
+                    <div class="card-body">
+                      <p class="card-text">3d model of my room. I made it in a few days on blender from scratch<br>
+                      Hope you like it!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/pie2.webp" class="cardImage" alt="magpie 2">
+                    <div class="card-body">
+                      <p class="card-text">I really like corvids (I think you've seen it with my drawings haha)<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/pie.webp" class="cardImage" alt="magpie 1">
+                    <div class="card-body">
+                      <p class="card-text">Coming home from high school I often see magpies in a tree. Sometimes I take pictures of them, so I tried to draw one.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/feraligatr2.webp" class="cardImage" alt="feraligatr">
+                    <div class="card-body">
+                      <p class="card-text">I tried to humanize pokemons, it's quite amazing that feraligatr with a human body looks so good!<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/typhlosion.webp" class="cardImage" alt="typhlosion">
+                    <div class="card-body">
+                      <p class="card-text">this one goes with feraligatr, I'm quite proud of the light in general!<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/grovyle.webp" class="cardImage" alt="grovyle">
+                    <div class="card-body">
+                      <p class="card-text">It's not one of my favorites, but it has its place in my portfolio.<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/hunter.webp" class="cardImage" alt="hunter wolf badge">
+                    <div class="card-body">
+                      <p class="card-text">Another badge for my friend, it's worse than the wickerbeast, but I enjoyed doing it.<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/moon.webp" class="cardImage" alt="moon wickerbeast badge">
+                    <div class="card-body">
+                      <p class="card-text">It was the first time I made a drawing for someone, she liked it and that's the principal.<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/mimiqui.webp" class="cardImage" alt="mimikyu art">
+                    <div class="card-body">
+                      <p class="card-text">A mimikyu made initially in traditional to test my new alcohol markers, I never finished the digital version.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/layton.webp" class="cardImage" alt="layton">
+                    <div class="card-body">
+                      <p class="card-text">A drawing of Layton. Why ? Because the Layton saga is great. Yeah, that's all.<br>
+                      <br></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./toka/assets/lugiaSquare.webp" class="cardImage" alt="lugia art">
+                    <div class="card-body">
+                      <p class="card-text">A lugia made initially on paper, I liked his posture so I took the opportunity to try new tools on photoshop.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerContainer">
+    <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top flex-fill">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"><svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use></svg></a> <span class="text-muted">Made with <span class="heart"><i class="bi bi-heart-fill"></i></span> by Tokageki<br>
+        Icon by <a href="http://twitter.com/BurgerKapitany" style="color:#6c757d">BurgerKapitany</a></span>
+      </div>
+      <ul>
+        <a href="https://instagram.com/tokageki_"><i class="bi bi-instagram" style="color:white; padding-right:10px;padding-left:10px;font-size: 1.5rem"></i></a>
+    </footer>
+  </div>
+</body>
+</html>

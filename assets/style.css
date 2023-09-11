@@ -1,0 +1,246 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+/* animation d'apparition des éléments */
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@font-face {
+    font-family: CourrierPrime;
+    src: url(CourierPrime-Regular.ttf);
+}
+
+
+
+body {
+    background: white;
+    --noir-principal: #131313;
+    color: black;
+}
+
+nav {
+    background-color: var(--noir-principal);
+}
+
+/* element géré par le js dans la page */
+.animated-element {
+    opacity: 0;
+}
+
+/* classe qui active l'animation quand le texte apparait */
+.appear {
+    animation: appear 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+/* texte "bonjour, je suis..." */
+.texteIntroduction {
+    font-family: CourrierPrime;
+    color: #747474
+}
+
+/* texte mis en surbrillance noire */
+.highlight {
+    display: inline-block;
+    color: white;
+    border-radius: 6px;
+    padding: 3px 6px;
+    background-color: var(--noir-principal);
+}
+
+.texteBlanc {
+    color: white;
+}
+
+/* animation de la flèche sur la première partie de la page */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* flèche qui flotte */
+.floating {
+    animation: floating 1.5s infinite;
+    font-size: 50px;
+    padding-top: 10vh;
+    color: white;
+}
+
+/* nom dans le menu de navigation */
+.nombar {
+    margin-bottom: 0px;
+}
+
+/* texte en dessous du nom dans le menu de navigation  */
+.slogan {
+    font-size: 15px;
+    color: #56aae2;
+}
+
+/* bouton vers l'index dans le menu de navigation */
+.boutonPrincipal {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin-right: 5px;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* lien vers l'index, contenu dans le bouton principal */
+.portfolioLien {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* bouton vers le informations de contact dans le menu de navigation */
+.boutonSecondaire {
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* lien vers les informations de contact, contenu dans le bouton secondaire */
+.contactsLiens {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* contient l'image de ma tête, mon nom et le slogan tout en étant un lien vers l'index */
+.homeLink {
+    height: 75px;
+}
+
+/* photo de ma tête */
+.websiteLogo {
+    padding-left: 25px;
+    padding-right: 15px;
+    height: 100%;
+}
+
+.hautSite {
+    background-color: var(--noir-principal);
+    margin-top: -5vh;
+}
+
+.corpsNoir {
+    height: 97vh;
+}
+
+.lienGithub {
+    padding-right: 2%;
+}
+
+.logosLiens {
+    color: white;
+    font-size: 30px;
+}
+
+.typing-text {
+    color: #56aae2;
+    padding-bottom: 10px;
+    height: 30px;
+}
+
+footer {
+    background-color: var(--noir-principal);
+}
+
+.coeur {
+    color: #56aae2;
+}
+
+.conteneursTextes {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mesProjets {
+    text-align: center;
+}
+
+.imageProjetContainer {
+    padding: 0;
+}
+
+
+
+
+.container {
+    position: relative;
+}
+
+.imageProjet {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgba(19, 19, 19, 0.8);
+}
+
+.imageProjetContainer:hover .overlay {
+    background-color: rgba(19, 19, 19, 0.2);
+}
+
+.imageProjetContainer:hover .texteOverlay {
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.texteOverlay {
+    color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imageProjetContainer:hover .langages{
+    color: #56aae2;
+}

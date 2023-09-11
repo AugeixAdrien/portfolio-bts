@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Discord Rich Presence</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Deezer Rich Presence</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">Rich presence est une fonctionnalité de discord permettant d'afficher des
+                    informations
+                    sur le jeu auquel l'utilisateur jour ou sur la musique que vous écoutez, cependant, le seul service
+                    proposant
+                    l'affichage de la musique en cours nativement est Spotify. J'ai donc décidé de créer une application
+                    permettant d'afficher les informations de la musique que vous écoutez sur Deezer sur votre profil
+                    discord.
+                    <br><br>
+                    Cette application m'aura demandé plusieurs essais avant d'obtenir la version actuelle, voici les 3
+                    versions :
+                </p>
+                <br><br>
+                <h5 style="text-decoration: underline;" class="animated-element">1. Utilisation d'un extension de
+                    navigateur</h5>
+                <br>
+                <p class="animated-element">La première version de mon programme utilisait une extension de navigateur
+                    que j'ai modifée pour qu'elle
+                    corresponde
+                    à mes besoins et envoie les données des musique à mon application python via des requetes HTTP.
+                    Cependant, cette méthode
+                    n'était pas optimale et assez bancale. De plus, je préfère utiliser l'application de bureau Deezer
+                    (bien
+                    que celle-ci ne
+                    soit qu'un portage de l'application web) et non le site web Deezer, ce qui rendait cette méthode
+                    inutilisable.</p>
+                <br><br>
+                <h5 style="text-decoration: underline;" class="animated-element">2. Utilisation de l'API de deezer</h5>
+                <br>
+                <p class="animated-element">Afin d'utiliser l'application de bureau Deezer, j'ai donc décidé de passer
+                    par l'API de Deezer avec le
+                    module requests de python.
+                    Cependant, l'API de deezer ne permet pas de récuperer les informations de la musique en cours, mais
+                    uniquement des informations
+                    diverses, telles que la dernier musique écoutée, la dernière musique ajoutée en favori, etc.. Pour
+                    l'utilisation que j'en faisais
+                    cela m'est convenu quelques mois, mais ne pas être parvenu à mon but m'a poussé à chercher une autre
+                    solution.</p>
+                <br><br>
+                <h5 style="text-decoration: underline;" class="animated-element">3. Utilisation de l'API Windows Runtime
+                    et de l'API de deezer
+                </h5>
+                <br>
+                <p class="animated-element">Windows Runtime est une API permettant de récupérer des informations sur
+                    windows. Dans le cadre de mon
+                    projet,
+                    le nom du media actuellement lu ainsi que l'application dont le media provient. Pour cela, j'ai
+                    utilisé
+                    le module winrt.
+                    Je vérifie donc si le media actuellement lu provient de Deezer, si c'est le cas, je récupère le
+                    titre et
+                    l'artiste de la musique,
+                    je fais en suite un appel vers l'API de deezer pour récupérer l'image de l'album ainsi que le lien
+                    de la
+                    musique pour l'afficher sur discord.</p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">J'ai donc réussi à créer une application permettant d'afficher les
+                    informations de la musique
+                    actuellement lue sur Deezer sur discord.Ce projet, en plus d'être parvenu à mon but, m'a permis de
+                    découvrir de nouvelles choses, notamment l'utilisation de l'API Windows Runtime.Celà m'a aussi
+                    poussé à
+                    chercher des alternatives à une simple application. Je suis assez satisfait du résultat final, même
+                    si
+                    je pense qu'il est possible d'améliorer le code et l'application en général.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

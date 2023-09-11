@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Mount Targon's archives</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Mount Targon's archives</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element"> L'objectif de ce projet était simplement d'utiliser une base de donnée avec sqlite
+                    et de travailler en groupe. C'était donc l'occasion de tenter de faire un projet original (bien que j'essaie
+                    souvent de me fixer cet objectif), on a donc choisi de faire un site web avec flask et d'exploiter une BDD
+                    construite par nos soins à partir de l'API fournie par RiotGames afin de récupérer des statistiques
+                    sur des joueurs de league of legends. En plus de devoir apprendre
+                    à utiliser ce framework, j'ai donc du mettre en place un serveur complet. Le serveur choisi sera un petit
+                    vps avec une distribution ubuntu. Pour le site, j'ai utilisé le framework bootstrap pour le design et en ai
+                    profité pour installer nginx pour un autre projet. Le nom du projet, Mount Targon's archives est une
+                    référence à une des régions du monde du jeu League of Legends.
+                    Le fond représente les icones des différentes autres régions du jeu.
+                    <br><br>
+                    <img src="../assets/projets/mountTargon.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">Page d'accueil du site</p>
+                <h5 style="text-decoration: underline;" class="animated-element">1. La base de données
+                </h5>
+                <br>
+                <p class="animated-element">La base de donnée aura donc été faite à partir de données récupérées via l'API de
+                    RiotGames. Pour cela, on a utilisé la librairie requests pour récupérer les données et les stocker dans
+                    un fichier .db, que l'on pourra exploiter ensuite. Pour la gestion de la base de donnée, on a utilisé
+                    sqlite3. La base de donnée contient les tables joueurs (nom des joueurs, l'url de l'icone de profil du joueur, 
+                    le niveau ainsi que la région du serveur utilisé), maitrises (champion maitrisé, niveau de maitrise,
+                    nom du joueur, l'url de l'icone du champion) ainsi que la table parties (qui contient diverses informations
+                    sur la partie, comme les adversaires, temps de jeu, performances, etc...). Pour la gestion de la base de donnée,
+                    chaque fonction est dans un fichier à part, ce qui permet une meilleure gestion et lisibilité du code.
+                </p>
+                <br>
+                <h5 style="text-decoration: underline;" class="animated-element">2. Exploitation des données</h5>
+                <br>
+                <p class="animated-element">
+                    La page d'accueil du site est une page de recherche, on peut donc rechercher un joueur et afficher ses
+                    statistiques. L'objectif de base étant d'utiliser une base de données, elle ne fait pas d'appel à l'API
+                    et ne possède donc pas tout les joueurs et n'est pas à jour si les données ont changé entre temps.
+                    <br><br>
+                    Le champ de recherche est fait en JavaScript et redirige l'utilisateur vers la page de profil du joueur
+                    sous l'url "domain.name/users/{usrName}". Cette page affiche les statistiques du joueur,
+                    on peut aussi voir les statistiques de quelques parties.
+                    usrName dans l'url est une variable fournie à Flask, qui va aller chercher les données correspondantes
+                    dans la BDD et calculer les statistiques.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Ce projet est sans doute l'un de mes projets préféré. Il aura été très constructif
+                    pour moi de travailler en équipe. Ce serait avec un grand plaisir que je travaillerais de nouveau avec ma
+                    partenaire ! Bien que flask ne soit pas forcément l'outil le plus efficace pour ce genre de projet, il
+                    nous a permis de nous familiariser avec ce framework et de découvrir plus en détail le côté backend d'une 
+                    application web. La gestion d'un serveur s'est avérée être un point intéréssant de ce projet, bien que je
+                    continue de préférer le développement. J'ai également pu découvrir le framework bootstrap, qui est très
+                    pratique pour le design d'un site web.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

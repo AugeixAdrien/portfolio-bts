@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Developpeur | Portfolio</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Jeu de course</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">Pour la fin d'année de 1ere, nous avions l'autorisation de faire un projet libre pour le cours de NSI.
+                    Au final, le projet n'aura jamais été donné à rendre et deviendra un projet personnel. J'ai souhaité
+                    m'essayer à un point que je n'avais pas encore abordé : la programmation d'un jeu 3D en python.
+                    N'ayant pas l'autorisation d'utiliser un moteur de jeu plus adapté comme Unity (que j'ai déjà eu
+                    l'occasion d'utiliser) ou d'un autre langage que python, j'ai donc choisi d'utiliser le module
+                    ursina engine, qui est un moteur de jeu 3D en python. Le moteur de jeu ne possédant pas
+                    d'interface de developpement (IDE) à proprement parler, ce fut un réel défi de créer un jeu
+                    uniquement à l'aide d'un éditeur de texte, à savoir Visual Studio Code. Ce module permet d'utiliser
+                    des objets 3D, des textures et des sons. Pour la création des modèles 3D, j'ai utilisé le logiciel
+                    Blender, qui est un logiciel de modélisation 3D open-source. Pour la création des textures, j'ai
+                    utilisé le logiciel Photoshop ou utilisé des textures extraites de divers jeux nintendo, étant donné
+                    que ce n'était qu'un projet personnel.
+                    <br><br>
+                    <img src="../assets/projets/course.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">Une des premières images du projet</p>
+                <h5 style="text-decoration: underline;" class="animated-element">1. Fonctionnement du système de courses
+                </h5>
+                <br>
+                <p class="animated-element">Pour rendre mon projet plus modulable, j'ai choisi de stocker chaque course
+                    dans un fichier séparé avec l'extension .race. En réalité, le fichier est une archive, contenant les
+                    modèles 3d, les textures, les sons et les informations de la course.
+                    Les informations de la course sont stockées dans un fichier json, qui est lu par le programme. Le
+                    fichier json contient diverses informations, telles que le nom de la course, le nombre de tours,
+                    l'emplacement des checkpoints, du départ, etc.. En réalité, cette façon de faire n'est pas du tout
+                    optimale et pourrait être améliorée si un jour je décide de refaire ce projet.</p>
+                </p>
+                <br><br>
+                <h5 style="text-decoration: underline;" class="animated-element">2. Fonctionnement des déplacements</h5>
+                <br>
+                <p class="animated-element">
+                    Les déplacements du joueur sont gérés par le module ursina engine. Pour cela, j'ai utilisé un
+                    système de vecteurs pour savoir la direction dans laquelle le joueur regarde et la direction dans
+                    laquelle il se déplace. Pour gérer les collisions, j'ai utilisé des raycasts, qui sont des rayons
+                    qui partent du joueur et qui vérifient s'il y a une collision avec un objet. Si c'est le cas, le
+                    joueur ne peut pas se déplacer dans cette direction. Il existe également des raycast qui vérifient
+                    si le joueur est au sol ou non. Si ce n'est pas le cas, la voiture descend. Il en existe également pour
+                    vérifier si l'utilisateur est passé par un checkpoint.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Ce projet aura été assez intéréssant pour une introduction au développement
+                    de jeux. Le fait de devoir tout faire à la main, sans IDE, a été assez compliqué. J'ai appris
+                    beaucoup de choses sur la programmation orientée objet, la gestion des collisions, la gestion des
+                    sons et des textures, etc.. En réalité, le fonctionnement du jeu a été assez inspiré du jeu Mario
+                    Kart 7, qui est un jeu dont j'ai eu l'occasion d'étudier le fonctionnement, notamment pour la
+                    création de mods. Cependant ce projet n'est pas terminé, je ne pense pas qu'il ira plus loin que ce
+                    stade de test. Essayer de reproduire le fonctionnement d'un jeu que j'apprécie
+                    aura été assez amusant pour moi, j'ai donc décidé de refaire des mécaniques plus originales pour
+                    d'autres projets.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

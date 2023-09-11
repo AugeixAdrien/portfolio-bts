@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Super Paper Mario</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">Affichage sur des matrices de leds</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">Ceci-est mon premier projet de programmation, mélant electronique
+                    et programmation. L'objectif ici était de contrôler 8 matrices de 8x8 leds. Pour ce faire j'ai
+                    utilisé un Arduino Uno et un module bluetooth hc-06 (que j'ai réutilisé dans mon projet de panneaux leds).
+                    Les données à afficher étaient stockées dans un tableau à 3 dimensions sous forme de chaines binaires :
+                    <br>B00111100 par exemple représente une ligne de une matrice, indiquant si on doit allumer ou non
+                    une led. 
+                    <br><br>
+                    <img src="../assets/projets/protogen.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">Affichage sur les leds</p>
+                <h5 style="text-decoration: underline;" class="animated-element">Les différents affichages
+                </h5>
+                <br>
+                <p class="animated-element">L'utilisation d'un tableau à plusieurs dimensions permet en réalité
+                    de gérer toutes les matrices ensemble. En premier, on va avoir la préconfiguration pour la totalité
+                    des matrices, qui elle même contient les 8 matrices, elles mêmes composées des 8 lignes.
+                    Pour changer l'affichage, le controleur peut soit afficher des animations à intervale régulier,
+                    soit attendre qu'un message soit reçu sur le module bluetooth.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Ce projet aura été assez intéréssant pour moi, il m'aura permis de developper
+                    mon attrait pour la programmation et l'electronique, tout en apprenant à utiliser github pour la première fois.
+                    Ce projet aura été repris par d'autres personnes. Je pense essayer de le refaire un jour ou l'autre car celui-ci
+                    fonctionne globalement dans mon cas, mais n'est pas assez modulable pour être utilisé efficacement par d'autres
+                    personnes. Je suis actuellement en train de travailler sur une version améliorée de ce projet, cette fois en utilisant
+                    un esp32, 2 matrices de leds RBG en 64x32 et des PCB custom. Je vais penser mon code cette fois en prenant en compte
+                    le fait que d'autres personnes pourraient l'utiliser, tout en offrant un code open-source.
+                    <br><br>
+                    Le code est disponible sur <a style="color:black;" href="https://github.com/tokageki/protogen">mon github</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>

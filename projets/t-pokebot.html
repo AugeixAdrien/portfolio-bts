@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AUGEIX Adrien | Super Paper Mario</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" href="../assets/carreAdrien.png">
+</head>
+
+<!-- corps de la page -->
+
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="d-flex flex-wrap justify-content-center py-3 mb-4 align-items-center">
+
+        <!-- logo -->
+        <a href="../index.html"
+            class="homeLink d-flex align-items-center mb-3 mb-sm-0 me-md-auto text-light text-decoration-none">
+            <img src="../assets/carreAdrien.png" class="websiteLogo" alt="website logo">
+            <div>
+                <h2 class="nombar">AUGEIX Adrien</h2>
+                <h5 class="slogan">Developpeur</h5>
+            </div>
+        </a>
+
+        <!-- boutons de navigation -->
+        <ul class="nav nav-pills nav-fill" role="tablist" id="nav-tab">
+            <li class="d-none d-md-block">
+                <a href="../index.html" class="boutonPrincipal">
+                    <span class="portfolioLien">Portfolio</span>
+                </a>
+            </li>
+            <li class="d-none d-md-block">
+                <a href="../contacts.html" class="boutonSecondaire">
+                    <span class="contactsLiens">me contacter</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- conteneur pour le premier bloc de texte de la partie blanche -->
+    <div class="container">
+        <div class="row justify-content-center conteneursTextes">
+            <div class="col-8">
+                <div>
+                    <!-- élément surligné en noir -->
+                    <h2 class="highlight animated-element">T-Pokebot | Tokabot (bots discord)</h2>
+                </div>
+                <!-- premier texte "à propos de moi" -->
+                <p class="animated-element">Durant le premier confinement, j'ai commencé à apprendre le python,
+                    notamment en faisant des bots discord (un bot sur discord est une application qui permet d'automatiser
+                    certaines taches, ou de réagir en fonction de commandes utilisées par l'utilisateur). Mon premier
+                    bot était un bot de jeu, ce projet m'aura donc permis de me lancer dans le langage python, qui deviendra par
+                    la suite un des langages que je maitrise le plus. L'objectif de mes 2 principaux bots (T-Pokebot et Tokabot)
+                    étaient de fournir un systeme de jeu inspiré de la saga pokemon (t-pokebot) et le second de subvenir à
+                    mes besoins, notamment pour de la modération ou du gain de temps pour diverses choses.
+                    <br><br>
+                    <img src="../assets/projets/tpokebot.jpg" class="imageProjet" alt="image du projet">
+                    <p style="font-size: 12px;color: gray;">un exemple de commande avec le t-pokebot</p>
+                <h5 style="text-decoration: underline;" class="animated-element">1. T-pokebot
+                </h5>
+                <br>
+                <p class="animated-element">Ce premier bot aura été réalisé pour un ami qui a eu l'idée du bot.
+                    Celui ci est basé sur le principe d'attraper un pokemon chromatique (plus rare) en exécutant des commandes
+                    limitée par un délais entre chaque utilisation.
+                    Le bot utilise l'heure unix pour détecter le délais entre 2 commandes et stocke toutes les données
+                    sur un cluser MongoDB, comme les données utilisateurs, les jeux en cours, etc..
+                </p>
+                <br>
+                <h5 style="text-decoration: underline;" class="animated-element">2. Tokabot</h5>
+                <br>
+                <p class="animated-element">
+                    Ce bot aura eu diverses utilités, il était le bot dans lequel je rajoutais des commandes quand j'en
+                    abvais besoin. Par exemple, une commande pour effacer le chat, un projet de Mastermind (projet pour
+                    la classe de NSI, utilisant mongodb aussi), un envoi de notification quand le prix d'une cryptomonnaie
+                    passe en dessous d'un certain seuil, calcul des frais de gas sur Ethereum (frais de transaction)
+                    en gwei (unité utilisée sur le réseau pour les frais) ainsi que la conversion en EUR ou en USD.
+                    Pour réalisé celà j'ai fait différents appels à différentes API et des calculs avant d'envoyer le résultat
+                    sur un salon précis.
+                </p>
+                <br><br>
+                <h4 class="highlight animated-element">Conclusion</h4>
+                <br>
+                <p class="animated-element">Ces différents projets m'ont permis d'apprendre
+                    à automatiser un peu plus et à trouver des solutions à mes besoins. Pour moi python est un bon langage
+                    pour commencer à faire des bots discord. Ces projets ne sont plus hébergés, mais
+                    le code du t-pokebot est encore disponible sur <a style="color:black;" href="https://github.com/tokageki/pokebot">mon github</a>
+                    cependant ce code n'est pas très optimisé, étant donné que c'est mon premier gros projet, avant même de
+                    prendre la spécialité NSI. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- pied de page -->
+    <footer class="d-flex flex-wrap justify-content-center ">
+        <div class="py-4 col-10">
+            <p class="text-muted">Fait avec <span class="coeur">❤</span> | AUGEIX Adrien | 2022 | Tous droits
+                réservés | <a href="../contacts.html">Contacts</a></p>
+        </div>
+    </footer>
+
+    <!-- script pour l'animation de l'apparition des textes -->
+    <script src="../js/appearOnLoad.js"></script>
+</body>
+
+</html>
